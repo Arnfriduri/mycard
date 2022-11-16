@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.deepPurple.shade900,
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
                 'FLUTTER DEVELOPER',
                 style: TextStyle(
                   fontFamily: 'SourceSansPro',
-                  color: Colors.teal.shade100,
+                  color: Colors.deepPurple.shade100,
                   fontSize: 20,
                   letterSpacing: 2.5,
                   fontWeight: FontWeight.bold,
@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
                 height: 20,
                 width: 150,
                 child: Divider(
-                  color: Colors.teal.shade100,
+                  color: Colors.deepPurple.shade100,
                 ),
               ),
               Card(
@@ -50,12 +50,12 @@ class MyApp extends StatelessWidget {
                 child: ListTile(
                   leading: Icon(
                     Icons.phone,
-                    color: Colors.teal,
+                    color: Colors.deepPurple.shade800,
                   ),
                   title: Text(
                     '+354 867 8412',
                     style: TextStyle(
-                      color: Colors.teal.shade800,
+                      color: Colors.deepPurple.shade800,
                       fontFamily: 'Source Sans Pro',
                       fontWeight: FontWeight.bold,
                       fontSize: 20,
@@ -68,12 +68,12 @@ class MyApp extends StatelessWidget {
                 child: ListTile(
                   leading: Icon(
                     Icons.email,
-                    color: Colors.teal,
+                    color: Colors.deepPurple.shade800,
                   ),
                   title: Text(
                     'arnfriduri@gmail.com',
                     style: TextStyle(
-                      color: Colors.teal.shade800,
+                      color: Colors.deepPurple.shade800,
                       fontFamily: 'Source Sans Pro',
                       fontWeight: FontWeight.bold,
                       fontSize: 20,
