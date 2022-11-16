@@ -64,10 +64,10 @@ flutter:
 
 
   fonts:
-    - family: Oxanium
-      fonts:
-        - asset: fonts/Oxanium-VariableFont_wght.ttf
-
     - family: SourceSansPro
       fonts:
         - asset: fonts/SourceSansPro-Regular.ttf
+
+    - family: BlackOpsOne
+      fonts:
+        - asset: fonts/BlackOpsOne-Regular.ttf

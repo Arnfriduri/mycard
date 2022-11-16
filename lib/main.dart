@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 radius: 50,
@@ -22,10 +23,9 @@ class MyApp extends StatelessWidget {
               Text(
                 'Arnfríður Ingvars',
                 style: TextStyle(
-                  fontFamily: 'Oxanium',
-                  fontSize: 40,
+                  fontFamily: 'BlackOpsOne',
+                  fontSize: 30,
                   color: Colors.white,
-                  fontWeight: FontWeight.bold,
                 ),
               ),
               Text(
@@ -38,72 +38,47 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Container(
-                padding: EdgeInsets.all(10),
-                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  border: Border.all(
-                    color: Colors.white,
-                    width: 3,
-                  ),
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(18),
-                  ),
-                ),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.phone,
-                      color: Colors.teal.shade800,
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      '+354 867 8412',
-                      style: TextStyle(
-                        color: Colors.teal.shade800,
-                        fontFamily: 'Source Sans Pro',
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20,
-                      ),
-                    ),
-                  ],
+              SizedBox(
+                height: 20,
+                width: 150,
+                child: Divider(
+                  color: Colors.teal.shade100,
                 ),
               ),
-              Container(
-                padding: EdgeInsets.all(10),
+              Card(
                 margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  border: Border.all(
-                    color: Colors.white,
-                    width: 3,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal,
                   ),
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(18),
+                  title: Text(
+                    '+354 867 8412',
+                    style: TextStyle(
+                      color: Colors.teal.shade800,
+                      fontFamily: 'Source Sans Pro',
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                    ),
                   ),
                 ),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.email,
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'arnfriduri@gmail.com',
+                    style: TextStyle(
                       color: Colors.teal.shade800,
+                      fontFamily: 'Source Sans Pro',
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
                     ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      'arnfriduri@gmail.com',
-                      style: TextStyle(
-                        color: Colors.teal.shade800,
-                        fontFamily: 'Source Sans Pro',
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20,
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
             ],
